@@ -69,8 +69,4 @@ void draw() {
     dots[i].update();
     dots[i].draw(map(i, 0, dots.length - 1, DOT_SIZE / 2 + LINE_WEIGHT + MARGIN, width - DOT_SIZE / 2 - LINE_WEIGHT - MARGIN));
   }
-
-  if (frameCount % 100 == 0) {
-    saveFrame("out/######.png");
-  }
 }
